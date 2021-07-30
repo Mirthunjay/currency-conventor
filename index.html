@@ -23,13 +23,8 @@
         <div class="field">
           <!-- Col Left -->
           <div class="col-left">
-            <input
-              type="number"
-              class="currency-input"
-              id="field1-input"
-              onchange="updateValue()"
-              placeholder="000000"
-            />
+            <select id="field-select" onchange="updateValue()">
+            </select>
           </div>
 
           <!-- Col Right -->
@@ -45,19 +40,23 @@
           <!-- Col Left -->
           <div class="col-left">
             <input
-              type="number"
-              class="currency-input"
-              id="field2-input"
-              placeholder="000000"
-              disabled
-            />
+            type="number"
+            class="currency-input"
+            id="field1-input"
+            onchange="updateValue()"
+            placeholder="0"
+          />
           </div>
 
           <!-- Col Right -->
           <div class="col-right">
-            <select id="field-select" onchange="updateValue()">
-              <option selected>Choose</option>
-            </select>
+            <input
+            type="number"
+            class="currency-input"
+            id="field2-input"
+            placeholder="0"
+            disabled
+          />
           </div>
         </div>
         <div class="button-summit">
